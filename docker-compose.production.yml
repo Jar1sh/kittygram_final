@@ -24,7 +24,7 @@ services:
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
-      - static:/static
+      - static:/frontend_static
       - media:/app/media/
   gateway:
     image: jarish/kittygram_gateway
